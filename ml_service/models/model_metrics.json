@@ -1,0 +1,40 @@
+{
+  "model_name": "SUMO-Calibrated Gradient Boosting & Random Forest Regressors",
+  "trained_at": "2026-09-30T13:12:50.863907",
+  "training_samples": 12096,
+  "test_samples": 3024,
+  "features": [
+    "zone_id",
+    "capacity",
+    "vehicle_count",
+    "entry_count",
+    "exit_count",
+    "traffic_density",
+    "avg_speed_kmh",
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "is_peak",
+    "temperature",
+    "humidity"
+  ],
+  "gradient_boosting": {
+    "target": "occupied_slots",
+    "mae": 1.2627,
+    "rmse": 1.5841,
+    "r2": 0.9427,
+    "mae_interpretation": "Predictions deviate by ~1.26 slots on average across test set."
+  },
+  "random_forest": {
+    "target": "occupied_slots",
+    "mae": 1.2787,
+    "rmse": 1.6172,
+    "r2": 0.9403
+  },
+  "percentage_model": {
+    "target": "occupancy_percentage",
+    "mae": 6.11,
+    "rmse": 7.42,
+    "r2": 0.9281
+  }
+}

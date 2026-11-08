@@ -1,0 +1,29 @@
+zone_id,zone_name,prefix,vehicle_class,slot_id_range,database_count,signage_label_format,physical_signage_verification_status,outstanding_manual_action
+zone_main_gate,Main Gate Parking,MG,four-wheeler,MG-4W-01 to MG-4W-10,10,IIT ISM MG CAR BAY #01-10,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_main_gate,Main Gate Parking,MG,two-wheeler,MG-2W-01 to MG-2W-23,23,IIT ISM MG 2W BAY #01-23,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_sac,SAC Parking,SAC,four-wheeler,SAC-4W-01 to SAC-4W-11,11,IIT ISM SAC CAR BAY #01-11,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_sac,SAC Parking,SAC,two-wheeler,SAC-2W-01 to SAC-2W-26,26,IIT ISM SAC 2W BAY #01-26,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_nlhc,NLHC Complex Parking,NLHC,four-wheeler,NLHC-4W-01 to NLHC-4W-11,11,IIT ISM NLHC CAR BAY #01-11,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_nlhc,NLHC Complex Parking,NLHC,two-wheeler,NLHC-2W-01 to NLHC-2W-27,27,IIT ISM NLHC 2W BAY #01-27,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_library,Central Library Parking,CL,four-wheeler,CL-4W-01 to CL-4W-18,18,IIT ISM CL CAR BAY #01-18,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_library,Central Library Parking,CL,two-wheeler,CL-2W-01 to CL-2W-43,43,IIT ISM CL 2W BAY #01-43,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_nac,NAC Building Parking,NAC,four-wheeler,NAC-4W-01 to NAC-4W-18,18,IIT ISM NAC CAR BAY #01-18,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_nac,NAC Building Parking,NAC,two-wheeler,NAC-2W-01 to NAC-2W-44,44,IIT ISM NAC 2W BAY #01-44,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_cse,CSE Department Parking,CSE,four-wheeler,CSE-4W-01 to CSE-4W-02,2,IIT ISM CSE CAR BAY #01-02,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_cse,CSE Department Parking,CSE,two-wheeler,CSE-2W-01 to CSE-2W-06,6,IIT ISM CSE 2W BAY #01-06,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_health_centre,Health Centre Parking,HC,four-wheeler,HC-4W-01 to HC-4W-08,8,IIT ISM HC CAR BAY #01-08,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_health_centre,Health Centre Parking,HC,two-wheeler,HC-2W-01 to HC-2W-19,19,IIT ISM HC 2W BAY #01-19,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_i2h,I2H Innovation Hub Parking,I2H,four-wheeler,I2H-4W-01 to I2H-4W-06,6,IIT ISM I2H CAR BAY #01-06,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_i2h,I2H Innovation Hub Parking,I2H,two-wheeler,I2H-2W-01 to I2H-2W-15,15,IIT ISM I2H 2W BAY #01-15,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_academic_complex,Academic Complex Parking,AC,four-wheeler,AC-4W-01 to AC-4W-14,14,IIT ISM AC CAR BAY #01-14,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_academic_complex,Academic Complex Parking,AC,two-wheeler,AC-2W-01 to AC-2W-35,35,IIT ISM AC 2W BAY #01-35,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_amber,Amber Hostel Parking,AMB,four-wheeler,AMB-4W-01 to AMB-4W-10,10,IIT ISM AMB CAR BAY #01-10,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_amber,Amber Hostel Parking,AMB,two-wheeler,AMB-2W-01 to AMB-2W-25,25,IIT ISM AMB 2W BAY #01-25,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_aquamarine,Aquamarine Hostel Parking,AQM,four-wheeler,AQM-4W-01 to AQM-4W-04,4,IIT ISM AQM CAR BAY #01-04,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_aquamarine,Aquamarine Hostel Parking,AQM,two-wheeler,AQM-2W-01 to AQM-2W-09,9,IIT ISM AQM 2W BAY #01-09,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_mechanical,Mechanical Dept Parking,ME,four-wheeler,ME-4W-01 to ME-4W-08,8,IIT ISM ME CAR BAY #01-08,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_mechanical,Mechanical Dept Parking,ME,two-wheeler,ME-2W-01 to ME-2W-19,19,IIT ISM ME 2W BAY #01-19,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_enviro,Environmental Dept Parking,ENV,four-wheeler,ENV-4W-01 to ENV-4W-14,14,IIT ISM ENV CAR BAY #01-14,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_enviro,Environmental Dept Parking,ENV,two-wheeler,ENV-2W-01 to ENV-2W-33,33,IIT ISM ENV 2W BAY #01-33,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.
+zone_oat,OAT Grounds Parking,OAT,four-wheeler,OAT-4W-01 to OAT-4W-13,13,IIT ISM OAT CAR BAY #01-13,requires_on_site_verification,Paint yellow bay markings (5.0m x 2.5m) and install pole sign.
+zone_oat,OAT Grounds Parking,OAT,two-wheeler,OAT-2W-01 to OAT-2W-32,32,IIT ISM OAT 2W BAY #01-32,requires_on_site_verification,Mark white chevron/curb stalls (2.0m x 1.0m) with dedicated two-wheeler sign.

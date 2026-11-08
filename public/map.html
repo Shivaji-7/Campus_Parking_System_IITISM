@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IIT (ISM) Dhanbad — Campus Smart Parking Map</title>
+  <link rel="stylesheet" href="/vendor/leaflet/leaflet.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: #0f172a; color: #f8fafc; height: 100vh; display: flex; flex-direction: column; }
+    header { background: #1e293b; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; }
+    h1 { font-size: 1.15rem; font-weight: 700; color: #38bdf8; display: flex; align-items: center; gap: 8px; }
+    .badge { background: #0284c7; color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 9999px; font-weight: 600; }
+    .main-container { display: flex; flex: 1; position: relative; overflow: hidden; }
+    #map { flex: 1; height: 100%; background: #0b1120; }
+    .sidebar { width: 380px; background: #1e293b; border-left: 1px solid #334155; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; }
+    .card { background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 14px; }
+    .card h3 { font-size: 0.88rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .stat-box { background: #1e293b; padding: 10px; border-radius: 6px; text-align: center; border: 1px solid #334155; }
+    .stat-val { font-size: 1.35rem; font-weight: 700; color: #38bdf8; }
+    .stat-lbl { font-size: 0.72rem; color: #94a3b8; margin-top: 2px; }
+    .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; margin-top: 6px; }
+    .legend-color { width: 14px; height: 14px; border-radius: 3px; }
+    .zone-detail-title { font-size: 1.1rem; font-weight: 700; color: #f8fafc; margin-bottom: 4px; }
+    .pill { display: inline-block; padding: 2px 8px; font-size: 0.72rem; border-radius: 4px; font-weight: 600; margin-bottom: 8px; }
+    .pill-green { background: #065f46; color: #6ee7b7; }
+    .pill-amber { background: #78350f; color: #fde68a; }
+    .pill-red { background: #881337; color: #fecdd3; }
+    .nav-btn { display: inline-block; text-decoration: none; background: #38bdf8; color: #0f172a; padding: 6px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span>Campus Smart Parking Management</span> <span class="badge">IIT (ISM) Dhanbad</span></h1>
+    <div>
+      <a href="/" class="nav-btn">Return to App Dashboard</a>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <div id="map"></div>
+    <div class="sidebar">
+      <div class="card">
+        <h3>Campus Capacity Overview</h3>
+        <div class="stat-grid">
+          <div class="stat-box">
+            <div class="stat-val" id="stat-total-slots">503</div>
+            <div class="stat-lbl">Total Seed Slots</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" id="stat-sumo-cap">213</div>
+            <div class="stat-lbl">SUMO Car Capacity</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" id="stat-4w">147</div>
+            <div class="stat-lbl">Four-Wheeler (70%)</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" id="stat-2w">356</div>
+            <div class="stat-lbl">Two-Wheeler (30%)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="sim-telemetry-card">
+        <h3>SUMO Simulation Telemetry</h3>
+        <div class="stat-grid">
+          <div class="stat-box">
+            <div class="stat-val" id="stat-sim-active" style="color: #38bdf8;">--</div>
+            <div class="stat-lbl">Active Vehicles</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" id="stat-sim-parked" style="color: #a855f7;">--</div>
+            <div class="stat-lbl">Currently Parked</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" id="stat-sim-entered" style="color: #10b981;">--</div>
+            <div class="stat-lbl">Network Inflow</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" id="stat-sim-exited" style="color: #f59e0b;">--</div>
+            <div class="stat-lbl">Network Outflow</div>
+          </div>
+        </div>
+        <div style="margin-top: 8px; font-size: 0.72rem; color: #94a3b8; display: flex; justify-content: space-between;">
+          <span id="stat-sim-freshness">Status: Checking...</span>
+          <span id="stat-sim-run">Run: --</span>
+        </div>
+      </div>
+
+      <div class="card" id="selected-zone-card">
+        <h3>Selected Zone Inspector</h3>
+        <p style="font-size: 0.82rem; color: #94a3b8;" id="no-select-msg">Click any marker or frontage line on the campus map to view its geometric details and slot breakdown.</p>
+        <div id="zone-details" style="display: none;">
+          <div class="zone-detail-title" id="zd-name">Central Library</div>
+          <div id="zd-pill"></div>
+          <p style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 6px;">Zone ID: <code id="zd-id" style="color: #38bdf8;">zone_library</code></p>
+          <div style="font-size: 0.82rem; line-height: 1.5; margin-bottom: 8px;">
+            <div><strong>Host Edge:</strong> <span id="zd-edge"></span></div>
+            <div><strong>Frontage Length:</strong> <span id="zd-frontage"></span></div>
+            <div><strong>4W Car Slots:</strong> <span id="zd-4w" style="color: #38bdf8; font-weight: 600;"></span></div>
+            <div><strong>2W Bike Slots:</strong> <span id="zd-2w" style="color: #facc15; font-weight: 600;"></span></div>
+            <div><strong>SUMO Car Cap:</strong> <span id="zd-sumo"></span></div>
+          </div>
+          <div style="background: #1e293b; padding: 8px; border-radius: 4px; font-size: 0.75rem; border: 1px solid #334155;">
+            <strong>Corridor Policy:</strong>
+            <p id="zd-restrictions" style="color: #cbd5e1; margin-top: 2px;"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Map Legend & Layers</h3>
+        <div class="legend-item"><div class="legend-color" style="background: #ef4444;"></div> Calibrated Parking Zone Marker</div>
+        <div class="legend-item"><div class="legend-color" style="background: #f59e0b;"></div> Parking Frontage Corridor Line</div>
+        <div class="legend-item"><div class="legend-color" style="background: #0284c7;"></div> Opposing Corridor Bottleneck (Library/NAC)</div>
+        <div class="legend-item"><div class="legend-color" style="background: #475569;"></div> Campus Road Network (SUMO XML)</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/vendor/leaflet/leaflet.js"></script>
+  <script src="/map.js"></script>
+</body>
+</html>

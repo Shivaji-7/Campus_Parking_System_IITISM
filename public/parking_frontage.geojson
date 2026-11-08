@@ -1,0 +1,616 @@
+{
+  "type": "FeatureCollection",
+  "name": "IIT_ISM_Parking_Frontage_Lines",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.44046271853082,
+            23.81438931421851
+          ],
+          [
+            86.44054511790804,
+            23.81445076122249
+          ],
+          [
+            86.44056436241466,
+            23.814587669068338
+          ],
+          [
+            86.44052327561658,
+            23.815171994558252
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_main_gate",
+        "zone_name": "Main Gate Parking",
+        "edge_id": "-517026169#0",
+        "lane_id": "-517026169#0_0",
+        "verified_frontage_m": 79.8,
+        "start_pos_m": 2.0,
+        "end_pos_m": 81.8,
+        "sumo_capacity": 14,
+        "four_wheeler_slots": 10,
+        "two_wheeler_slots": 23,
+        "corridor_status": "conditionally_suitable",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.43804509161527,
+            23.812311154112695
+          ],
+          [
+            86.43845773501123,
+            23.81294473128802
+          ],
+          [
+            86.43857150365962,
+            23.813084964113752
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_sac",
+        "zone_name": "SAC Parking",
+        "edge_id": "991055730",
+        "lane_id": "991055730_0",
+        "verified_frontage_m": 89.0,
+        "start_pos_m": 2.0,
+        "end_pos_m": 91.0,
+        "sumo_capacity": 16,
+        "four_wheeler_slots": 11,
+        "two_wheeler_slots": 26,
+        "corridor_status": "suitable_for_parking",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.44156051272769,
+            23.815282062919696
+          ],
+          [
+            86.44055012139437,
+            23.815230440038142
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_nlhc",
+        "zone_name": "NLHC Complex Parking",
+        "edge_id": "-517026168#2",
+        "lane_id": "-517026168#2_0",
+        "verified_frontage_m": 90.8,
+        "start_pos_m": 2.0,
+        "end_pos_m": 92.8,
+        "sumo_capacity": 16,
+        "four_wheeler_slots": 11,
+        "two_wheeler_slots": 27,
+        "corridor_status": "suitable_for_parking",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.44083405909139,
+            23.81644142494457
+          ],
+          [
+            86.4414997489072,
+            23.816290199187648
+          ],
+          [
+            86.44174490169561,
+            23.816265344983133
+          ],
+          [
+            86.44191234662452,
+            23.81627534451321
+          ],
+          [
+            86.44213119328496,
+            23.81631822641895
+          ],
+          [
+            86.44220921783628,
+            23.816324108610832
+          ],
+          [
+            86.4422445972093,
+            23.816315655964342
+          ],
+          [
+            86.44227856918279,
+            23.816291933779063
+          ],
+          [
+            86.44249066031048,
+            23.816123617585756
+          ],
+          [
+            86.44265565121417,
+            23.816018537026537
+          ],
+          [
+            86.44302244962728,
+            23.815830998544037
+          ],
+          [
+            86.44348893259847,
+            23.81561157389611
+          ],
+          [
+            86.4435388337162,
+            23.815558915490705
+          ],
+          [
+            86.44355793253553,
+            23.81552348779191
+          ],
+          [
+            86.44356681436182,
+            23.81546661687719
+          ],
+          [
+            86.44357432136438,
+            23.81538679917271
+          ],
+          [
+            86.44357237098303,
+            23.81536068903179
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_library",
+        "zone_name": "Central Library Parking",
+        "edge_id": "-991056586#2",
+        "lane_id": "-991056586#2_0",
+        "verified_frontage_m": 291.6,
+        "start_pos_m": 2.0,
+        "end_pos_m": 293.6,
+        "sumo_capacity": 26,
+        "four_wheeler_slots": 18,
+        "two_wheeler_slots": 43,
+        "corridor_status": "restricted_or_unsuitable",
+        "restriction_note": "Capped to 50% operational frontage (approx 145m) to resolve opposing-lane dual-curb bottleneck."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.44360369756645,
+            23.815358634318635
+          ],
+          [
+            86.4436059324654,
+            23.815387093861858
+          ],
+          [
+            86.44359801969865,
+            23.815469981057696
+          ],
+          [
+            86.44358833016773,
+            23.815532087745563
+          ],
+          [
+            86.44356527206939,
+            23.815575088224683
+          ],
+          [
+            86.44350866511165,
+            23.81563476757024
+          ],
+          [
+            86.44303726337623,
+            23.81585652288885
+          ],
+          [
+            86.44267223589918,
+            23.816043164583558
+          ],
+          [
+            86.44251000156558,
+            23.816146448681703
+          ],
+          [
+            86.4422983046648,
+            23.816314405038007
+          ],
+          [
+            86.44225862083273,
+            23.816342261388982
+          ],
+          [
+            86.44221203801438,
+            23.816353383182463
+          ],
+          [
+            86.44212655452152,
+            23.816346932077558
+          ],
+          [
+            86.44190810051151,
+            23.816304051585597
+          ],
+          [
+            86.44174556270936,
+            23.816294431101866
+          ],
+          [
+            86.44150532089387,
+            23.816318761158293
+          ],
+          [
+            86.4408414981834,
+            23.81646954209559
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_nac",
+        "zone_name": "NAC Building Parking",
+        "edge_id": "991056586#2",
+        "lane_id": "991056586#2_0",
+        "verified_frontage_m": 295.7,
+        "start_pos_m": 2.0,
+        "end_pos_m": 297.7,
+        "sumo_capacity": 26,
+        "four_wheeler_slots": 18,
+        "two_wheeler_slots": 44,
+        "corridor_status": "restricted_or_unsuitable",
+        "restriction_note": "Capped to 50% operational frontage (approx 145m) to resolve opposing-lane dual-curb bottleneck."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.44081987031068,
+            23.81659094692655
+          ],
+          [
+            86.44089481582702,
+            23.81683436578709
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_cse",
+        "zone_name": "CSE Department Parking",
+        "edge_id": "1207647016#1",
+        "lane_id": "1207647016#1_0",
+        "verified_frontage_m": 23.2,
+        "start_pos_m": 2.0,
+        "end_pos_m": 25.2,
+        "sumo_capacity": 4,
+        "four_wheeler_slots": 2,
+        "two_wheeler_slots": 6,
+        "corridor_status": "conditionally_suitable",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.440377471598,
+            23.81389286540648
+          ],
+          [
+            86.44037359968374,
+            23.81388002561312
+          ],
+          [
+            86.4402409758453,
+            23.813786331888142
+          ],
+          [
+            86.44009258731906,
+            23.813705948499397
+          ],
+          [
+            86.43993217379067,
+            23.813613869747957
+          ],
+          [
+            86.43977959099959,
+            23.813527238603818
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_health_centre",
+        "zone_name": "Health Centre Parking",
+        "edge_id": "517026174",
+        "lane_id": "517026174_0",
+        "verified_frontage_m": 64.2,
+        "start_pos_m": 2.0,
+        "end_pos_m": 66.2,
+        "sumo_capacity": 11,
+        "four_wheeler_slots": 8,
+        "two_wheeler_slots": 19,
+        "corridor_status": "conditionally_suitable",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.4435656632317,
+            23.81527603296663
+          ],
+          [
+            86.44352312888093,
+            23.814729069122183
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_i2h",
+        "zone_name": "I2H Innovation Hub Parking",
+        "edge_id": "-991056586#1",
+        "lane_id": "-991056586#1_0",
+        "verified_frontage_m": 52.6,
+        "start_pos_m": 2.0,
+        "end_pos_m": 54.6,
+        "sumo_capacity": 9,
+        "four_wheeler_slots": 6,
+        "two_wheeler_slots": 15,
+        "corridor_status": "conditionally_suitable",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.44340879773085,
+            23.814005356624296
+          ],
+          [
+            86.44340674342553,
+            23.814003633089477
+          ],
+          [
+            86.44330421289492,
+            23.813989263108766
+          ],
+          [
+            86.44238572769878,
+            23.813936177644337
+          ],
+          [
+            86.44210986119467,
+            23.813912689814554
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_academic_complex",
+        "zone_name": "Academic Complex Parking",
+        "edge_id": "-517026169#5",
+        "lane_id": "-517026169#5_0",
+        "verified_frontage_m": 117.5,
+        "start_pos_m": 2.0,
+        "end_pos_m": 119.5,
+        "sumo_capacity": 21,
+        "four_wheeler_slots": 14,
+        "two_wheeler_slots": 35,
+        "corridor_status": "conditionally_suitable",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.44269906653689,
+            23.818381882118917
+          ],
+          [
+            86.44271206452291,
+            23.818395838697246
+          ],
+          [
+            86.44303599894631,
+            23.818683781709918
+          ],
+          [
+            86.44309890142746,
+            23.81873666667689
+          ],
+          [
+            86.4431679405836,
+            23.8187779222245
+          ],
+          [
+            86.44342214354386,
+            23.818934103630294
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_amber",
+        "zone_name": "Amber Hostel Parking",
+        "edge_id": "1031061562#3",
+        "lane_id": "1031061562#3_0",
+        "verified_frontage_m": 84.5,
+        "start_pos_m": 2.0,
+        "end_pos_m": 86.5,
+        "sumo_capacity": 15,
+        "four_wheeler_slots": 10,
+        "two_wheeler_slots": 25,
+        "corridor_status": "suitable_for_parking",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.4442761549528,
+            23.81931156880225
+          ],
+          [
+            86.44418525798709,
+            23.818985088021375
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_aquamarine",
+        "zone_name": "Aquamarine Hostel Parking",
+        "edge_id": "1029515471",
+        "lane_id": "1029515471_0",
+        "verified_frontage_m": 31.6,
+        "start_pos_m": 2.0,
+        "end_pos_m": 33.6,
+        "sumo_capacity": 5,
+        "four_wheeler_slots": 4,
+        "two_wheeler_slots": 9,
+        "corridor_status": "conditionally_suitable",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.4394854864392,
+            23.814504991020943
+          ],
+          [
+            86.43973020141256,
+            23.814970316563112
+          ],
+          [
+            86.43979062129671,
+            23.815120561088747
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_mechanical",
+        "zone_name": "Mechanical Dept Parking",
+        "edge_id": "-517026179#7",
+        "lane_id": "-517026179#7_0",
+        "verified_frontage_m": 65.5,
+        "start_pos_m": 2.0,
+        "end_pos_m": 67.5,
+        "sumo_capacity": 11,
+        "four_wheeler_slots": 8,
+        "two_wheeler_slots": 19,
+        "corridor_status": "suitable_for_parking",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.43988849882929,
+            23.815395766803356
+          ],
+          [
+            86.43991638384352,
+            23.815509402978225
+          ],
+          [
+            86.4398668890999,
+            23.816519476069836
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_enviro",
+        "zone_name": "Environmental Dept Parking",
+        "edge_id": "-517026179#5",
+        "lane_id": "-517026179#5_0",
+        "verified_frontage_m": 110.4,
+        "start_pos_m": 2.0,
+        "end_pos_m": 112.4,
+        "sumo_capacity": 20,
+        "four_wheeler_slots": 14,
+        "two_wheeler_slots": 33,
+        "corridor_status": "suitable_for_parking",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            86.44001899725926,
+            23.813009929840067
+          ],
+          [
+            86.43940443001176,
+            23.812050372888038
+          ]
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_oat",
+        "zone_name": "OAT Grounds Parking",
+        "edge_id": "-1118600401",
+        "lane_id": "-1118600401_0",
+        "verified_frontage_m": 109.0,
+        "start_pos_m": 2.0,
+        "end_pos_m": 111.0,
+        "sumo_capacity": 19,
+        "four_wheeler_slots": 13,
+        "two_wheeler_slots": 32,
+        "corridor_status": "suitable_for_parking",
+        "restriction_note": "Standard single-side parallel parking with full mapped frontage."
+      }
+    }
+  ]
+}

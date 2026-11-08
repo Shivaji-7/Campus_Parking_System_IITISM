@@ -58,6 +58,13 @@ const reservationSchema = new mongoose.Schema(
       type: Date,
       default: null,
     },
+    actualDeparture: { type: Date, default: null },
+    isOverstay: { type: Boolean, default: false },
+    overstayMinutes: { type: Number, default: 0 },
+    baseFee: { type: Number, default: 0 },
+    finalFee: { type: Number, default: 0 },
+    feeMultiplier: { type: Number, default: 1.0 },
+    isBufferSlot: { type: Boolean, default: false },
   },
   { timestamps: true }
 );

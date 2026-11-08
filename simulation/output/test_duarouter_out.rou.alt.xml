@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-10-13T14:42:43.167887+05:30 by Eclipse SUMO duarouter 1.28.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="campus.net.xml"/>
+        <additional-files value="campus_parking.add.xml"/>
+        <route-files value="campus.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="output/test_duarouter_out.rou.xml"/>
+    </output>
+
+    <report>
+        <ignore-errors value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="twoWheeler" length="2.20" maxSpeed="11.11" vClass="motorcycle" width="0.90" color="240,180,41" accel="2.6" decel="4.5"/>
+    <vehicle id="veh_457" type="twoWheeler" depart="27064.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="8259.00"/>
+    </vehicle>
+    <vType id="facultyCar" length="4.50" maxSpeed="11.11" vClass="passenger" width="1.80" color="59,130,246" accel="2.0" decel="4.5"/>
+    <vehicle id="veh_9" type="facultyCar" depart="27236.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="5440.00"/>
+    </vehicle>
+    <vehicle id="veh_451" type="twoWheeler" depart="27246.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="13933.00"/>
+    </vehicle>
+    <vType id="studentCar" length="4.20" maxSpeed="11.11" vClass="passenger" width="1.80" color="14,165,233" accel="2.2" decel="4.5"/>
+    <vehicle id="veh_44" type="studentCar" depart="27628.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="8890.00"/>
+    </vehicle>
+    <vehicle id="veh_332" type="twoWheeler" depart="27673.00">
+        <routeDistribution last="0">
+            <route cost="341.80" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="5304.00"/>
+    </vehicle>
+    <vType id="visitorCar" length="4.80" maxSpeed="11.11" vClass="passenger" width="1.90" color="249,115,22" accel="1.8" decel="4.5"/>
+    <vehicle id="veh_268" type="visitorCar" depart="27718.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="9425.00"/>
+    </vehicle>
+    <vehicle id="veh_546" type="facultyCar" depart="27986.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="11161.00"/>
+    </vehicle>
+    <vehicle id="veh_159" type="twoWheeler" depart="27991.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="3322.00"/>
+    </vehicle>
+    <vehicle id="veh_539" type="twoWheeler" depart="27998.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="12266.00"/>
+    </vehicle>
+    <vehicle id="veh_102" type="facultyCar" depart="28014.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="6863.00"/>
+    </vehicle>
+    <vehicle id="veh_223" type="twoWheeler" depart="28062.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="10485.00"/>
+    </vehicle>
+    <vehicle id="veh_144" type="studentCar" depart="28222.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="3516.00"/>
+    </vehicle>
+    <vehicle id="veh_241" type="facultyCar" depart="28358.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="9820.00"/>
+    </vehicle>
+    <vehicle id="veh_59" type="twoWheeler" depart="28367.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="10029.00"/>
+    </vehicle>
+    <vehicle id="veh_163" type="twoWheeler" depart="28390.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="5878.00"/>
+    </vehicle>
+    <vehicle id="veh_520" type="visitorCar" depart="28417.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="3698.00"/>
+    </vehicle>
+    <vehicle id="veh_261" type="studentCar" depart="28522.00">
+        <routeDistribution last="0">
+            <route cost="343.08" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="4188.00"/>
+    </vehicle>
+    <vehicle id="veh_146" type="visitorCar" depart="28598.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="7355.00"/>
+    </vehicle>
+    <vehicle id="veh_556" type="twoWheeler" depart="28674.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="13415.00"/>
+    </vehicle>
+    <vehicle id="veh_429" type="visitorCar" depart="28768.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="2937.00"/>
+    </vehicle>
+    <vehicle id="veh_561" type="twoWheeler" depart="28919.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="3367.00"/>
+    </vehicle>
+    <vehicle id="veh_85" type="twoWheeler" depart="28926.00">
+        <routeDistribution last="0">
+            <route cost="125.92" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="2976.00"/>
+    </vehicle>
+    <vehicle id="veh_131" type="facultyCar" depart="28933.00">
+        <routeDistribution last="0">
+            <route cost="127.38" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="6152.00"/>
+    </vehicle>
+    <vehicle id="veh_69" type="facultyCar" depart="28967.00">
+        <routeDistribution last="0">
+            <route cost="125.92" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="14125.00"/>
+    </vehicle>
+    <vehicle id="veh_35" type="twoWheeler" depart="29098.00">
+        <routeDistribution last="0">
+            <route cost="341.80" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="5020.00"/>
+    </vehicle>
+    <vehicle id="veh_599" type="facultyCar" depart="29110.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="10317.00"/>
+    </vehicle>
+    <vehicle id="veh_64" type="twoWheeler" depart="29461.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="12743.00"/>
+    </vehicle>
+    <vehicle id="veh_502" type="facultyCar" depart="29461.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="2802.00"/>
+    </vehicle>
+    <vehicle id="veh_203" type="twoWheeler" depart="29618.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="13457.00"/>
+    </vehicle>
+    <vehicle id="veh_259" type="facultyCar" depart="29631.00">
+        <routeDistribution last="0">
+            <route cost="341.80" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="1942.00"/>
+    </vehicle>
+    <vehicle id="veh_337" type="twoWheeler" depart="29658.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="7798.00"/>
+    </vehicle>
+    <vehicle id="veh_214" type="studentCar" depart="29728.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="11036.00"/>
+    </vehicle>
+    <vType id="adminEV" length="4.30" maxSpeed="11.11" vClass="evehicle" width="1.80" color="34,197,94" accel="2.5" decel="4.5"/>
+    <vehicle id="veh_63" type="adminEV" depart="29749.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="9943.00"/>
+    </vehicle>
+    <vehicle id="veh_465" type="twoWheeler" depart="29749.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="11236.00"/>
+    </vehicle>
+    <vehicle id="veh_499" type="twoWheeler" depart="29758.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="13911.00"/>
+    </vehicle>
+    <vehicle id="veh_233" type="studentCar" depart="29778.00">
+        <routeDistribution last="0">
+            <route cost="125.92" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="12057.00"/>
+    </vehicle>
+    <vehicle id="veh_151" type="adminEV" depart="29828.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="10413.00"/>
+    </vehicle>
+    <vehicle id="veh_394" type="studentCar" depart="29941.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="5485.00"/>
+    </vehicle>
+    <vehicle id="veh_515" type="twoWheeler" depart="29956.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="8258.00"/>
+    </vehicle>
+    <vehicle id="veh_248" type="visitorCar" depart="30009.00">
+        <routeDistribution last="0">
+            <route cost="343.08" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="12778.00"/>
+    </vehicle>
+    <vehicle id="veh_178" type="facultyCar" depart="30078.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="5726.00"/>
+    </vehicle>
+    <vehicle id="veh_192" type="twoWheeler" depart="30127.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="11620.00"/>
+    </vehicle>
+    <vehicle id="veh_449" type="visitorCar" depart="30252.00">
+        <routeDistribution last="0">
+            <route cost="125.92" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="10633.00"/>
+    </vehicle>
+    <vehicle id="veh_68" type="twoWheeler" depart="30377.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="5311.00"/>
+    </vehicle>
+    <vehicle id="veh_498" type="visitorCar" depart="30494.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="12680.00"/>
+    </vehicle>
+    <vehicle id="veh_164" type="studentCar" depart="30523.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="14044.00"/>
+    </vehicle>
+    <vehicle id="veh_312" type="visitorCar" depart="30526.00">
+        <routeDistribution last="0">
+            <route cost="127.38" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="12731.00"/>
+    </vehicle>
+    <vehicle id="veh_470" type="facultyCar" depart="30601.00">
+        <routeDistribution last="0">
+            <route cost="341.80" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="14290.00"/>
+    </vehicle>
+    <vehicle id="veh_4" type="twoWheeler" depart="30695.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="4299.00"/>
+    </vehicle>
+    <vehicle id="veh_482" type="studentCar" depart="30791.00">
+        <routeDistribution last="0">
+            <route cost="364.67" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="11509.00"/>
+    </vehicle>
+    <vehicle id="veh_357" type="twoWheeler" depart="30877.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="2951.00"/>
+    </vehicle>
+    <vehicle id="veh_537" type="visitorCar" depart="30880.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="11238.00"/>
+    </vehicle>
+    <vehicle id="veh_266" type="twoWheeler" depart="31078.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="13873.00"/>
+    </vehicle>
+    <vehicle id="veh_354" type="twoWheeler" depart="31102.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="9576.00"/>
+    </vehicle>
+    <vehicle id="veh_571" type="twoWheeler" depart="31138.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="14038.00"/>
+    </vehicle>
+    <vehicle id="veh_435" type="studentCar" depart="31173.00">
+        <routeDistribution last="0">
+            <route cost="127.38" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="2005.00"/>
+    </vehicle>
+    <vehicle id="veh_318" type="twoWheeler" depart="31189.00">
+        <routeDistribution last="0">
+            <route cost="341.80" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="9393.00"/>
+    </vehicle>
+    <vehicle id="veh_195" type="facultyCar" depart="31466.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="3377.00"/>
+    </vehicle>
+    <vehicle id="veh_81" type="twoWheeler" depart="31604.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="5420.00"/>
+    </vehicle>
+    <vehicle id="veh_409" type="facultyCar" depart="31628.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="11140.00"/>
+    </vehicle>
+    <vehicle id="veh_541" type="twoWheeler" depart="31729.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="13965.00"/>
+    </vehicle>
+    <vehicle id="veh_452" type="twoWheeler" depart="32042.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="5634.00"/>
+    </vehicle>
+    <vehicle id="veh_39" type="visitorCar" depart="32245.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="5288.00"/>
+    </vehicle>
+    <vehicle id="veh_213" type="studentCar" depart="32337.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="13475.00"/>
+    </vehicle>
+    <vehicle id="veh_330" type="facultyCar" depart="32447.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="2130.00"/>
+    </vehicle>
+    <vehicle id="veh_415" type="twoWheeler" depart="32472.00">
+        <routeDistribution last="0">
+            <route cost="364.67" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="12517.00"/>
+    </vehicle>
+    <vehicle id="veh_550" type="twoWheeler" depart="32565.00">
+        <routeDistribution last="0">
+            <route cost="343.08" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="10166.00"/>
+    </vehicle>
+    <vehicle id="veh_447" type="twoWheeler" depart="32633.00">
+        <routeDistribution last="0">
+            <route cost="364.67" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="6854.00"/>
+    </vehicle>
+    <vehicle id="veh_106" type="twoWheeler" depart="32680.00">
+        <routeDistribution last="0">
+            <route cost="343.08" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="9708.00"/>
+    </vehicle>
+    <vehicle id="veh_563" type="studentCar" depart="32686.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="14258.00"/>
+    </vehicle>
+    <vehicle id="veh_103" type="facultyCar" depart="32721.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="6170.00"/>
+    </vehicle>
+    <vehicle id="veh_34" type="twoWheeler" depart="32760.00">
+        <routeDistribution last="0">
+            <route cost="364.67" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="13257.00"/>
+    </vehicle>
+    <vehicle id="veh_590" type="twoWheeler" depart="32808.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="8867.00"/>
+    </vehicle>
+    <vehicle id="veh_575" type="facultyCar" depart="32902.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="10772.00"/>
+    </vehicle>
+    <vehicle id="veh_560" type="twoWheeler" depart="32919.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="10519.00"/>
+    </vehicle>
+    <vehicle id="veh_31" type="twoWheeler" depart="32949.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="14148.00"/>
+    </vehicle>
+    <vehicle id="veh_125" type="twoWheeler" depart="33277.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="2486.00"/>
+    </vehicle>
+    <vehicle id="veh_306" type="twoWheeler" depart="33395.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="4999.00"/>
+    </vehicle>
+    <vehicle id="veh_532" type="studentCar" depart="33607.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="1827.00"/>
+    </vehicle>
+    <vehicle id="veh_455" type="studentCar" depart="33891.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="12118.00"/>
+    </vehicle>
+    <vehicle id="veh_423" type="studentCar" depart="33928.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="13017.00"/>
+    </vehicle>
+    <vehicle id="veh_180" type="adminEV" depart="33931.00">
+        <routeDistribution last="0">
+            <route cost="341.80" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="8372.00"/>
+    </vehicle>
+    <vehicle id="veh_456" type="facultyCar" depart="33946.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="4217.00"/>
+    </vehicle>
+    <vehicle id="veh_43" type="twoWheeler" depart="34070.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="6235.00"/>
+    </vehicle>
+    <vehicle id="veh_548" type="twoWheeler" depart="34091.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="9646.00"/>
+    </vehicle>
+    <vehicle id="veh_487" type="visitorCar" depart="34165.00">
+        <routeDistribution last="0">
+            <route cost="125.92" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="4510.00"/>
+    </vehicle>
+    <vehicle id="veh_544" type="twoWheeler" depart="34213.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="12574.00"/>
+    </vehicle>
+    <vehicle id="veh_359" type="studentCar" depart="34460.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="13912.00"/>
+    </vehicle>
+    <vehicle id="veh_105" type="studentCar" depart="34592.00">
+        <routeDistribution last="0">
+            <route cost="343.08" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="2562.00"/>
+    </vehicle>
+    <vehicle id="veh_476" type="visitorCar" depart="34694.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="13466.00"/>
+    </vehicle>
+    <vehicle id="veh_307" type="twoWheeler" depart="34697.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="4406.00"/>
+    </vehicle>
+    <vehicle id="veh_172" type="adminEV" depart="34794.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="4850.00"/>
+    </vehicle>
+    <vehicle id="veh_265" type="adminEV" depart="34891.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="2563.00"/>
+    </vehicle>
+    <vehicle id="veh_473" type="visitorCar" depart="34986.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="12277.00"/>
+    </vehicle>
+    <vehicle id="veh_379" type="twoWheeler" depart="35071.00">
+        <routeDistribution last="0">
+            <route cost="364.67" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="7652.00"/>
+    </vehicle>
+    <vehicle id="veh_538" type="facultyCar" depart="35194.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="7151.00"/>
+    </vehicle>
+    <vehicle id="veh_84" type="facultyCar" depart="35349.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="13218.00"/>
+    </vehicle>
+    <vehicle id="veh_193" type="visitorCar" depart="35409.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="12348.00"/>
+    </vehicle>
+    <vehicle id="veh_341" type="facultyCar" depart="35440.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="3445.00"/>
+    </vehicle>
+    <vehicle id="veh_253" type="twoWheeler" depart="35497.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="12276.00"/>
+    </vehicle>
+    <vehicle id="veh_60" type="studentCar" depart="35533.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="8450.00"/>
+    </vehicle>
+    <vehicle id="veh_187" type="twoWheeler" depart="35545.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="9653.00"/>
+    </vehicle>
+    <vehicle id="veh_139" type="facultyCar" depart="35674.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="4109.00"/>
+    </vehicle>
+    <vehicle id="veh_293" type="studentCar" depart="35745.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="4200.00"/>
+    </vehicle>
+    <vehicle id="veh_77" type="twoWheeler" depart="35849.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="8700.00"/>
+    </vehicle>
+    <vehicle id="veh_356" type="twoWheeler" depart="35906.00">
+        <routeDistribution last="0">
+            <route cost="364.67" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="3532.00"/>
+    </vehicle>
+    <vehicle id="veh_211" type="visitorCar" depart="35934.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="4101.00"/>
+    </vehicle>
+    <vehicle id="veh_202" type="twoWheeler" depart="37152.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="9122.00"/>
+    </vehicle>
+    <vehicle id="veh_169" type="twoWheeler" depart="40386.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="7029.00"/>
+    </vehicle>
+    <vehicle id="veh_228" type="studentCar" depart="40728.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="2338.00"/>
+    </vehicle>
+    <vehicle id="veh_314" type="visitorCar" depart="41107.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="11264.00"/>
+    </vehicle>
+    <vehicle id="veh_444" type="studentCar" depart="41156.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="8834.00"/>
+    </vehicle>
+    <vehicle id="veh_565" type="adminEV" depart="41178.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="10208.00"/>
+    </vehicle>
+    <vehicle id="veh_94" type="twoWheeler" depart="41497.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="5391.00"/>
+    </vehicle>
+    <vehicle id="veh_327" type="studentCar" depart="41647.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="12613.00"/>
+    </vehicle>
+    <vehicle id="veh_585" type="studentCar" depart="42084.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="6977.00"/>
+    </vehicle>
+    <vehicle id="veh_263" type="visitorCar" depart="42347.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="11171.00"/>
+    </vehicle>
+    <vehicle id="veh_339" type="twoWheeler" depart="43031.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="4284.00"/>
+    </vehicle>
+    <vehicle id="veh_351" type="studentCar" depart="43100.00">
+        <routeDistribution last="0">
+            <route cost="125.92" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="4595.00"/>
+    </vehicle>
+    <vehicle id="veh_257" type="twoWheeler" depart="43131.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="8725.00"/>
+    </vehicle>
+    <vehicle id="veh_514" type="visitorCar" depart="43819.00">
+        <routeDistribution last="0">
+            <route cost="343.08" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="11028.00"/>
+    </vehicle>
+    <vehicle id="veh_437" type="facultyCar" depart="43890.00">
+        <routeDistribution last="0">
+            <route cost="364.67" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="10771.00"/>
+    </vehicle>
+    <vehicle id="veh_204" type="twoWheeler" depart="44090.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="4102.00"/>
+    </vehicle>
+    <vehicle id="veh_568" type="twoWheeler" depart="44248.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="6488.00"/>
+    </vehicle>
+    <vehicle id="veh_591" type="twoWheeler" depart="45910.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="6464.00"/>
+    </vehicle>
+    <vehicle id="veh_285" type="twoWheeler" depart="46069.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="8188.00"/>
+    </vehicle>
+    <vehicle id="veh_349" type="facultyCar" depart="46214.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="4440.00"/>
+    </vehicle>
+    <vehicle id="veh_273" type="twoWheeler" depart="46574.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="10692.00"/>
+    </vehicle>
+    <vehicle id="veh_208" type="twoWheeler" depart="46916.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="2220.00"/>
+    </vehicle>
+    <vehicle id="veh_83" type="visitorCar" depart="47549.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="12721.00"/>
+    </vehicle>
+    <vehicle id="veh_301" type="facultyCar" depart="47596.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="8905.00"/>
+    </vehicle>
+    <vehicle id="veh_461" type="twoWheeler" depart="48401.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="3002.00"/>
+    </vehicle>
+    <vehicle id="veh_396" type="twoWheeler" depart="48448.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="14141.00"/>
+    </vehicle>
+    <vehicle id="veh_74" type="facultyCar" depart="48869.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="9669.00"/>
+    </vehicle>
+    <vehicle id="veh_219" type="studentCar" depart="49719.00">
+        <routeDistribution last="0">
+            <route cost="341.80" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="12245.00"/>
+    </vehicle>
+    <vehicle id="veh_250" type="studentCar" depart="49884.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="14187.00"/>
+    </vehicle>
+    <vehicle id="veh_454" type="twoWheeler" depart="50621.00">
+        <routeDistribution last="0">
+            <route cost="343.08" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="9909.00"/>
+    </vehicle>
+    <vehicle id="veh_467" type="adminEV" depart="51523.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="10060.00"/>
+    </vehicle>
+    <vehicle id="veh_212" type="studentCar" depart="51659.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="3550.00"/>
+    </vehicle>
+    <vehicle id="veh_521" type="twoWheeler" depart="51861.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="3335.00"/>
+    </vehicle>
+    <vehicle id="veh_404" type="twoWheeler" depart="52272.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="6198.00"/>
+    </vehicle>
+    <vehicle id="veh_593" type="facultyCar" depart="52406.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="5449.00"/>
+    </vehicle>
+    <vehicle id="veh_377" type="twoWheeler" depart="52858.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="10667.00"/>
+    </vehicle>
+    <vehicle id="veh_287" type="studentCar" depart="53448.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="10670.00"/>
+    </vehicle>
+    <vehicle id="veh_324" type="twoWheeler" depart="54245.00">
+        <routeDistribution last="0">
+            <route cost="125.92" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="8951.00"/>
+    </vehicle>
+    <vehicle id="veh_247" type="facultyCar" depart="54289.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="2051.00"/>
+    </vehicle>
+    <vehicle id="veh_378" type="twoWheeler" depart="55379.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="10616.00"/>
+    </vehicle>
+    <vehicle id="veh_280" type="twoWheeler" depart="55468.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="6382.00"/>
+    </vehicle>
+    <vehicle id="veh_46" type="adminEV" depart="55655.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="1945.00"/>
+    </vehicle>
+    <vehicle id="veh_118" type="twoWheeler" depart="55881.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="3106.00"/>
+    </vehicle>
+    <vehicle id="veh_292" type="facultyCar" depart="56680.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="13167.00"/>
+    </vehicle>
+    <vehicle id="veh_358" type="studentCar" depart="57106.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="6494.00"/>
+    </vehicle>
+    <vehicle id="veh_190" type="twoWheeler" depart="57157.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="3936.00"/>
+    </vehicle>
+    <vehicle id="veh_400" type="facultyCar" depart="57265.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="4819.00"/>
+    </vehicle>
+    <vehicle id="veh_363" type="studentCar" depart="57369.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="12375.00"/>
+    </vehicle>
+    <vehicle id="veh_130" type="twoWheeler" depart="57555.00">
+        <routeDistribution last="0">
+            <route cost="121.73" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 1031060317#7 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="5973.00"/>
+    </vehicle>
+    <vehicle id="veh_201" type="twoWheeler" depart="57649.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="8532.00"/>
+    </vehicle>
+    <vehicle id="veh_321" type="twoWheeler" depart="57815.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="8638.00"/>
+    </vehicle>
+    <vehicle id="veh_222" type="studentCar" depart="57952.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="12261.00"/>
+    </vehicle>
+    <vehicle id="veh_304" type="twoWheeler" depart="58007.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="5946.00"/>
+    </vehicle>
+    <vehicle id="veh_412" type="twoWheeler" depart="58273.00">
+        <routeDistribution last="0">
+            <route cost="125.92" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="13025.00"/>
+    </vehicle>
+    <vehicle id="veh_227" type="twoWheeler" depart="58448.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="6369.00"/>
+    </vehicle>
+    <vehicle id="veh_92" type="twoWheeler" depart="58501.00">
+        <routeDistribution last="0">
+            <route cost="364.67" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="12596.00"/>
+    </vehicle>
+    <vehicle id="veh_244" type="facultyCar" depart="58645.00">
+        <routeDistribution last="0">
+            <route cost="344.31" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1029515471 1029515471"/>
+        </routeDistribution>
+        <stop parkingArea="zone_aquamarine" duration="10008.00"/>
+    </vehicle>
+    <vehicle id="veh_376" type="twoWheeler" depart="58876.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="5850.00"/>
+    </vehicle>
+    <vehicle id="veh_365" type="visitorCar" depart="58895.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="10194.00"/>
+    </vehicle>
+    <vehicle id="veh_176" type="visitorCar" depart="59117.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="7379.00"/>
+    </vehicle>
+    <vehicle id="veh_524" type="twoWheeler" depart="59132.00">
+        <routeDistribution last="0">
+            <route cost="127.38" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="4107.00"/>
+    </vehicle>
+    <vehicle id="veh_588" type="twoWheeler" depart="59165.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="4197.00"/>
+    </vehicle>
+    <vehicle id="veh_518" type="visitorCar" depart="59176.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="3059.00"/>
+    </vehicle>
+    <vehicle id="veh_581" type="twoWheeler" depart="59621.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="9746.00"/>
+    </vehicle>
+    <vehicle id="veh_142" type="visitorCar" depart="59628.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="7420.00"/>
+    </vehicle>
+    <vehicle id="veh_391" type="facultyCar" depart="59735.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="3700.00"/>
+    </vehicle>
+    <vehicle id="veh_375" type="studentCar" depart="59759.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="13500.00"/>
+    </vehicle>
+    <vehicle id="veh_160" type="studentCar" depart="59826.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="13512.00"/>
+    </vehicle>
+    <vehicle id="veh_225" type="studentCar" depart="59878.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="10736.00"/>
+    </vehicle>
+    <vehicle id="veh_58" type="studentCar" depart="60085.00">
+        <routeDistribution last="0">
+            <route cost="127.38" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="13539.00"/>
+    </vehicle>
+    <vehicle id="veh_600" type="studentCar" depart="60631.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="3489.00"/>
+    </vehicle>
+    <vehicle id="veh_572" type="facultyCar" depart="60672.00">
+        <routeDistribution last="0">
+            <route cost="127.38" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="13952.00"/>
+    </vehicle>
+    <vehicle id="veh_158" type="visitorCar" depart="60698.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="7418.00"/>
+    </vehicle>
+    <vehicle id="veh_348" type="facultyCar" depart="60951.00">
+        <routeDistribution last="0">
+            <route cost="343.08" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="9687.00"/>
+    </vehicle>
+    <vehicle id="veh_295" type="twoWheeler" depart="61113.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="6626.00"/>
+    </vehicle>
+    <vehicle id="veh_367" type="facultyCar" depart="61156.00">
+        <routeDistribution last="0">
+            <route cost="364.67" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="9822.00"/>
+    </vehicle>
+    <vehicle id="veh_311" type="twoWheeler" depart="61200.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="3211.00"/>
+    </vehicle>
+    <vehicle id="veh_54" type="studentCar" depart="61284.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="10088.00"/>
+    </vehicle>
+    <vehicle id="veh_463" type="visitorCar" depart="61318.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="2049.00"/>
+    </vehicle>
+    <vehicle id="veh_281" type="studentCar" depart="61522.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="3481.00"/>
+    </vehicle>
+    <vehicle id="veh_78" type="studentCar" depart="61614.00">
+        <routeDistribution last="0">
+            <route cost="162.91" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="12300.00"/>
+    </vehicle>
+    <vehicle id="veh_129" type="twoWheeler" depart="62329.00">
+        <routeDistribution last="0">
+            <route cost="367.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031061270#2 -1031061270#1 -1031061271#4 -1031061271#2 -1031061271#1 -1031061271#0 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="3616.00"/>
+    </vehicle>
+    <vehicle id="veh_441" type="facultyCar" depart="62417.00">
+        <routeDistribution last="0">
+            <route cost="141.32" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="13971.00"/>
+    </vehicle>
+    <vehicle id="veh_308" type="twoWheeler" depart="62455.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="13549.00"/>
+    </vehicle>
+    <vehicle id="veh_522" type="facultyCar" depart="62672.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="4277.00"/>
+    </vehicle>
+    <vehicle id="veh_121" type="twoWheeler" depart="62745.00">
+        <routeDistribution last="0">
+            <route cost="127.38" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="10683.00"/>
+    </vehicle>
+    <vehicle id="veh_509" type="facultyCar" depart="62810.00">
+        <routeDistribution last="0">
+            <route cost="127.38" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="5388.00"/>
+    </vehicle>
+    <vehicle id="veh_112" type="twoWheeler" depart="62913.00">
+        <routeDistribution last="0">
+            <route cost="343.08" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="14341.00"/>
+    </vehicle>
+    <vehicle id="veh_490" type="twoWheeler" depart="62918.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="13746.00"/>
+    </vehicle>
+    <vehicle id="veh_399" type="studentCar" depart="62980.00">
+        <routeDistribution last="0">
+            <route cost="127.38" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="4837.00"/>
+    </vehicle>
+    <vehicle id="veh_79" type="adminEV" depart="63232.00">
+        <routeDistribution last="0">
+            <route cost="127.38" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 1031061562#3"/>
+        </routeDistribution>
+        <stop parkingArea="zone_amber" duration="2504.00"/>
+    </vehicle>
+    <vehicle id="veh_47" type="twoWheeler" depart="63292.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="8797.00"/>
+    </vehicle>
+    <vehicle id="veh_493" type="twoWheeler" depart="63483.00">
+        <routeDistribution last="0">
+            <route cost="364.67" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 517026168#1 517026168#2 -517026168#2"/>
+        </routeDistribution>
+        <stop parkingArea="zone_nlhc" duration="4006.00"/>
+    </vehicle>
+    <vehicle id="veh_133" type="studentCar" depart="63571.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="11343.00"/>
+    </vehicle>
+    <vehicle id="veh_517" type="twoWheeler" depart="63701.00">
+        <routeDistribution last="0">
+            <route cost="343.08" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 1118600401 -1118600401"/>
+        </routeDistribution>
+        <stop parkingArea="zone_oat" duration="8570.00"/>
+    </vehicle>
+    <vehicle id="veh_430" type="twoWheeler" depart="63702.00">
+        <routeDistribution last="0">
+            <route cost="125.92" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="3392.00"/>
+    </vehicle>
+    <vehicle id="veh_469" type="twoWheeler" depart="63771.00">
+        <routeDistribution last="0">
+            <route cost="302.93" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="8013.00"/>
+    </vehicle>
+    <vehicle id="veh_446" type="twoWheeler" depart="63884.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="8273.00"/>
+    </vehicle>
+    <vehicle id="veh_503" type="facultyCar" depart="63978.00">
+        <routeDistribution last="0">
+            <route cost="140.04" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7 -517026179#5"/>
+        </routeDistribution>
+        <stop parkingArea="zone_enviro" duration="9216.00"/>
+    </vehicle>
+    <vehicle id="veh_495" type="twoWheeler" depart="64008.00">
+        <routeDistribution last="0">
+            <route cost="143.36" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 1031060317#3 1031060317#4 1031060317#5 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="12936.00"/>
+    </vehicle>
+    <vehicle id="veh_23" type="twoWheeler" depart="64112.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="9122.00"/>
+    </vehicle>
+    <vehicle id="veh_65" type="studentCar" depart="64300.00">
+        <routeDistribution last="0">
+            <route cost="385.45" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055729 -517026186#0 517026179#11 517026179#12 517026179#13 517026179#14 -1124123214 -517026200 1232840997#8 1232840997#9 1076015122#0 1076015122#1 -1031060714#0 1031060713#1 -1031060712#0 -1031059878#2 1196688900 -1031059880#3 -1031059880#2 -1031059880#0 -1031060317#10 -1031060317#8 -1031060317#7 -1031061562#3 -1031061562#2 1207647018 1207647016#1"/>
+        </routeDistribution>
+        <stop parkingArea="zone_cse" duration="9881.00"/>
+    </vehicle>
+    <vehicle id="veh_305" type="studentCar" depart="64584.00">
+        <routeDistribution last="0">
+            <route cost="327.68" probability="1.00000000" edges="-1029296863 1029296863 -1031058622#0 -1029295337#3 -1029295337#2 -1029295337#1 -1029295337#0 -1031060317#0 991056589#5 991056589#6 991056589#7 991056589#8 544878399#4 544878399#5 -991056583 1010357948#0 1010357948#1 991056581#0 991056581#2 991056572#0 -991055731#0 991055730 -517026179#9 -517026179#8 -517026179#7"/>
+        </routeDistribution>
+        <stop parkingArea="zone_mechanical" duration="11526.00"/>
+    </vehicle>
+    <vehicle id="veh_315" type="facultyCar" depart="64749.00">
+        <routeDistribution last="0">
+            <route cost="101.17" probability="1.00000000" edges="-1031896971#0 1031896971#0 1031896971#1 -1031896970#0 991056581#2 991056572#0 -991055731#0 991055730"/>
+        </routeDistribution>
+        <stop parkingArea="zone_sac" duration="3733.00"/>
+    </vehicle>
+</routes>

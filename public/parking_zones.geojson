@@ -1,0 +1,390 @@
+{
+  "type": "FeatureCollection",
+  "name": "IIT_ISM_Calibrated_Parking_Zones",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.44056436241466,
+          23.814587669068338
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_main_gate",
+        "zone_name": "Main Gate Parking",
+        "mapped_edge_id": "-517026169#0",
+        "host_lane_id": "-517026169#0_0",
+        "road_type": "highway.service",
+        "frontage_m": 79.8,
+        "total_calibrated_slots": 33,
+        "four_wheeler_capacity": 10,
+        "two_wheeler_capacity": 23,
+        "sumo_roadside_capacity": 14,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "medium",
+        "operational_status": "conditionally_suitable",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.43845773501123,
+          23.81294473128802
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_sac",
+        "zone_name": "SAC Parking",
+        "mapped_edge_id": "991055730",
+        "host_lane_id": "991055730_0",
+        "road_type": "highway.residential",
+        "frontage_m": 89.0,
+        "total_calibrated_slots": 37,
+        "four_wheeler_capacity": 11,
+        "two_wheeler_capacity": 26,
+        "sumo_roadside_capacity": 16,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "high",
+        "operational_status": "suitable_for_parking",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.44055012139437,
+          23.815230440038142
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_nlhc",
+        "zone_name": "NLHC Complex Parking",
+        "mapped_edge_id": "-517026168#2",
+        "host_lane_id": "-517026168#2_0",
+        "road_type": "highway.residential",
+        "frontage_m": 90.8,
+        "total_calibrated_slots": 38,
+        "four_wheeler_capacity": 11,
+        "two_wheeler_capacity": 27,
+        "sumo_roadside_capacity": 16,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "high",
+        "operational_status": "suitable_for_parking",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.44249066031048,
+          23.816123617585756
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_library",
+        "zone_name": "Central Library Parking",
+        "mapped_edge_id": "-991056586#2",
+        "host_lane_id": "-991056586#2_0",
+        "road_type": "highway.service",
+        "frontage_m": 291.6,
+        "total_calibrated_slots": 61,
+        "four_wheeler_capacity": 18,
+        "two_wheeler_capacity": 43,
+        "sumo_roadside_capacity": 26,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "medium-low",
+        "operational_status": "restricted_or_unsuitable",
+        "restrictions": "Capped to 50% operational frontage (approx 145m) to resolve opposing-lane dual-curb bottleneck.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.44251000156558,
+          23.816146448681703
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_nac",
+        "zone_name": "NAC Building Parking",
+        "mapped_edge_id": "991056586#2",
+        "host_lane_id": "991056586#2_0",
+        "road_type": "highway.service",
+        "frontage_m": 295.7,
+        "total_calibrated_slots": 62,
+        "four_wheeler_capacity": 18,
+        "two_wheeler_capacity": 44,
+        "sumo_roadside_capacity": 26,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "medium-low",
+        "operational_status": "restricted_or_unsuitable",
+        "restrictions": "Capped to 50% operational frontage (approx 145m) to resolve opposing-lane dual-curb bottleneck.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.44089481582702,
+          23.81683436578709
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_cse",
+        "zone_name": "CSE Department Parking",
+        "mapped_edge_id": "1207647016#1",
+        "host_lane_id": "1207647016#1_0",
+        "road_type": "highway.residential",
+        "frontage_m": 23.2,
+        "total_calibrated_slots": 8,
+        "four_wheeler_capacity": 2,
+        "two_wheeler_capacity": 6,
+        "sumo_roadside_capacity": 4,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "medium",
+        "operational_status": "conditionally_suitable",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.44009258731906,
+          23.813705948499397
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_health_centre",
+        "zone_name": "Health Centre Parking",
+        "mapped_edge_id": "517026174",
+        "host_lane_id": "517026174_0",
+        "road_type": "highway.service",
+        "frontage_m": 64.2,
+        "total_calibrated_slots": 27,
+        "four_wheeler_capacity": 8,
+        "two_wheeler_capacity": 19,
+        "sumo_roadside_capacity": 11,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "medium",
+        "operational_status": "conditionally_suitable",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.44352312888093,
+          23.814729069122183
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_i2h",
+        "zone_name": "I2H Innovation Hub Parking",
+        "mapped_edge_id": "-991056586#1",
+        "host_lane_id": "-991056586#1_0",
+        "road_type": "highway.service",
+        "frontage_m": 52.6,
+        "total_calibrated_slots": 21,
+        "four_wheeler_capacity": 6,
+        "two_wheeler_capacity": 15,
+        "sumo_roadside_capacity": 9,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "medium",
+        "operational_status": "conditionally_suitable",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.44330421289492,
+          23.813989263108766
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_academic_complex",
+        "zone_name": "Academic Complex Parking",
+        "mapped_edge_id": "-517026169#5",
+        "host_lane_id": "-517026169#5_0",
+        "road_type": "highway.service",
+        "frontage_m": 117.5,
+        "total_calibrated_slots": 49,
+        "four_wheeler_capacity": 14,
+        "two_wheeler_capacity": 35,
+        "sumo_roadside_capacity": 21,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "medium",
+        "operational_status": "conditionally_suitable",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.44309890142746,
+          23.81873666667689
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_amber",
+        "zone_name": "Amber Hostel Parking",
+        "mapped_edge_id": "1031061562#3",
+        "host_lane_id": "1031061562#3_0",
+        "road_type": "highway.residential",
+        "frontage_m": 84.5,
+        "total_calibrated_slots": 35,
+        "four_wheeler_capacity": 10,
+        "two_wheeler_capacity": 25,
+        "sumo_roadside_capacity": 15,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "high",
+        "operational_status": "suitable_for_parking",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.44418525798709,
+          23.818985088021375
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_aquamarine",
+        "zone_name": "Aquamarine Hostel Parking",
+        "mapped_edge_id": "1029515471",
+        "host_lane_id": "1029515471_0",
+        "road_type": "highway.residential",
+        "frontage_m": 31.6,
+        "total_calibrated_slots": 13,
+        "four_wheeler_capacity": 4,
+        "two_wheeler_capacity": 9,
+        "sumo_roadside_capacity": 5,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "medium",
+        "operational_status": "conditionally_suitable",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.43973020141256,
+          23.814970316563112
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_mechanical",
+        "zone_name": "Mechanical Dept Parking",
+        "mapped_edge_id": "-517026179#7",
+        "host_lane_id": "-517026179#7_0",
+        "road_type": "highway.unclassified",
+        "frontage_m": 65.5,
+        "total_calibrated_slots": 27,
+        "four_wheeler_capacity": 8,
+        "two_wheeler_capacity": 19,
+        "sumo_roadside_capacity": 11,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "high",
+        "operational_status": "suitable_for_parking",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.43991638384352,
+          23.815509402978225
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_enviro",
+        "zone_name": "Environmental Dept Parking",
+        "mapped_edge_id": "-517026179#5",
+        "host_lane_id": "-517026179#5_0",
+        "road_type": "highway.unclassified",
+        "frontage_m": 110.4,
+        "total_calibrated_slots": 47,
+        "four_wheeler_capacity": 14,
+        "two_wheeler_capacity": 33,
+        "sumo_roadside_capacity": 20,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "high",
+        "operational_status": "suitable_for_parking",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.43940443001176,
+          23.812050372888038
+        ]
+      },
+      "properties": {
+        "zone_id": "zone_oat",
+        "zone_name": "OAT Grounds Parking",
+        "mapped_edge_id": "-1118600401",
+        "host_lane_id": "-1118600401_0",
+        "road_type": "highway.residential",
+        "frontage_m": 109.0,
+        "total_calibrated_slots": 45,
+        "four_wheeler_capacity": 13,
+        "two_wheeler_capacity": 32,
+        "sumo_roadside_capacity": 19,
+        "parking_classification": "roadside_parallel_curb",
+        "confidence": "high",
+        "operational_status": "suitable_for_parking",
+        "restrictions": "Standard single-side parallel parking with full mapped frontage.",
+        "source": "IIT ISM SUMO Network & Stage 1 Calibration"
+      }
+    }
+  ]
+}

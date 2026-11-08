@@ -59,9 +59,20 @@ const reserveSlot = async (req, res) => {
       return res.status(400).json({ message: "Parking slot is not available" });
     }
 
+    const { isUserBanned } = require("../services/reputationService");
+    
+    if (isUserBanned(req.user)) {
+      return res.status(403).json({ message: "User is banned from making reservations" });
+    }
+
     const startsAt = new Date();
     const totalDurationMinutes = getDurationMinutes(durationHours, durationMinutes);
     const expiresAt = new Date(startsAt.getTime() + totalDurationMinutes * 60 * 1000);
+
+    const baseRatePerHour = 10; // Simple base rate
+    const baseFee = (totalDurationMinutes / 60) * baseRatePerHour;
+    const feeMultiplier = req.user.reputation ? req.user.reputation.feeMultiplier : 1.0;
+    const finalFee = baseFee * feeMultiplier;
 
     const reservation = await Reservation.create({
       user: req.user._id,
@@ -71,6 +82,9 @@ const reserveSlot = async (req, res) => {
       startsAt,
       expiresAt,
       permitCode: createPermitCode(),
+      baseFee,
+      finalFee,
+      feeMultiplier,
     });
 
     slot.isAvailable = false;
@@ -177,6 +191,35 @@ const updateSlotAvailability = async (req, res) => {
   }
 };
 
+const { processCheckout, calculateReputation } = require("../services/reputationService");
+
+const checkout = async (req, res) => {
+  try {
+    const { reservationId } = req.params;
+    const result = await processCheckout(req.user._id, reservationId);
+    
+    // Free up the slot
+    const slot = await ParkingSlot.findById(result.reservation.slot);
+    if (slot) {
+      slot.isAvailable = true;
+      await slot.save();
+    }
+
+    res.json({ message: "Checkout successful", result });
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
+const getReputation = async (req, res) => {
+  try {
+    const reputation = calculateReputation(req.user);
+    res.json({ reputation });
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
 module.exports = {
   getSlots,
   getZones,
@@ -186,4 +229,6 @@ module.exports = {
   verifyPermit,
   updateSlotAvailability,
   refreshExpiredReservations,
+  checkout,
+  getReputation,
 };

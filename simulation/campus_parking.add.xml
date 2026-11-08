@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<additional>
+    <parkingArea id="zone_main_gate" lane="-517026169#0_0" startPos="2.0" endPos="81.8" name="Main Gate Parking" roadsideCapacity="14" onRoad="false" />
+    <parkingArea id="zone_sac" lane="991055730_0" startPos="2.0" endPos="91.0" name="SAC Parking" roadsideCapacity="16" onRoad="false" />
+    <parkingArea id="zone_nlhc" lane="-517026168#2_0" startPos="2.0" endPos="92.8" name="NLHC Complex Parking" roadsideCapacity="16" onRoad="false" />
+    <parkingArea id="zone_library" lane="-991056586#2_0" startPos="2.0" endPos="293.6" name="Central Library Parking" roadsideCapacity="26" onRoad="false" />
+    <parkingArea id="zone_nac" lane="991056586#2_0" startPos="2.0" endPos="297.7" name="NAC Building Parking" roadsideCapacity="26" onRoad="false" />
+    <parkingArea id="zone_cse" lane="1207647016#1_0" startPos="2.0" endPos="25.2" name="CSE Department Parking" roadsideCapacity="4" onRoad="false" />
+    <parkingArea id="zone_health_centre" lane="517026174_0" startPos="2.0" endPos="66.2" name="Health Centre Parking" roadsideCapacity="11" onRoad="false" />
+    <parkingArea id="zone_i2h" lane="-991056586#1_0" startPos="2.0" endPos="54.6" name="I2H Innovation Hub Parking" roadsideCapacity="9" onRoad="false" />
+    <parkingArea id="zone_academic_complex" lane="-517026169#5_0" startPos="2.0" endPos="119.5" name="Academic Complex Parking" roadsideCapacity="21" onRoad="false" />
+    <parkingArea id="zone_amber" lane="1031061562#3_0" startPos="2.0" endPos="86.5" name="Amber Hostel Parking" roadsideCapacity="15" onRoad="false" />
+    <parkingArea id="zone_aquamarine" lane="1029515471_0" startPos="2.0" endPos="33.6" name="Aquamarine Hostel Parking" roadsideCapacity="5" onRoad="false" />
+    <parkingArea id="zone_mechanical" lane="-517026179#7_0" startPos="2.0" endPos="67.5" name="Mechanical Dept Parking" roadsideCapacity="11" onRoad="false" />
+    <parkingArea id="zone_enviro" lane="-517026179#5_0" startPos="2.0" endPos="112.4" name="Environmental Dept Parking" roadsideCapacity="20" onRoad="false" />
+    <parkingArea id="zone_oat" lane="-1118600401_0" startPos="2.0" endPos="111.0" name="OAT Grounds Parking" roadsideCapacity="19" onRoad="false" />
+</additional>

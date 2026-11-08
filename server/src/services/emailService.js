@@ -29,6 +29,10 @@ const getTransporter = () => {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     },
+    // Set socket and connection timeouts to prevent requests from hanging
+    connectionTimeout: 5000,
+    greetingTimeout: 5000,
+    socketTimeout: 5000,
   });
 
   return transporter;
@@ -41,15 +45,24 @@ const sendEmail = async ({ to, subject, text, html }) => {
     return false;
   }
 
-  await activeTransporter.sendMail({
-    from: process.env.EMAIL_FROM || process.env.SMTP_USER,
-    to,
-    subject,
-    text,
-    html,
-  });
-
-  return true;
+  try {
+    await activeTransporter.sendMail({
+      from: process.env.EMAIL_FROM || process.env.SMTP_USER,
+      to,
+      subject,
+      text,
+      html,
+    });
+    return true;
+  } catch (error) {
+    // Log error with safe diagnostic message without exposing secret credentials
+    console.error(
+      `Email delivery to ${to} failed: ${error.message}${
+        error.responseCode ? ` (SMTP Code: ${error.responseCode})` : ""
+      }`
+    );
+    return false;
+  }
 };
 
 module.exports = { sendEmail };

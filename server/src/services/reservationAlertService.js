@@ -1,3 +1,6 @@
+// Explicitly require models referenced by populate in loadReservations
+require("../models/User");
+require("../models/ParkingZone");
 const Reservation = require("../models/Reservation");
 const ParkingSlot = require("../models/ParkingSlot");
 const { sendEmail } = require("./emailService");
@@ -84,14 +87,21 @@ const sendUpcomingExpiryReminders = async () => {
       continue;
     }
 
-    const sent = await sendEmail({
-      to: reservation.user.email,
-      ...buildReminderMessage(reservation),
-    });
+    try {
+      const sent = await sendEmail({
+        to: reservation.user.email,
+        ...buildReminderMessage(reservation),
+      });
 
-    if (sent) {
-      reservation.reminderSentAt = new Date();
-      await reservation.save();
+      if (sent) {
+        reservation.reminderSentAt = new Date();
+        await reservation.save();
+      }
+    } catch (error) {
+      console.error(
+        `Failed to send expiry reminder for reservation ${reservation.permitCode}:`,
+        error.message
+      );
     }
   }
 };
@@ -105,16 +115,24 @@ const expireReservationsAndNotify = async () => {
 
   for (const reservation of reservations) {
     if (reservation.user?.email && !reservation.expiryEmailSentAt) {
-      const sent = await sendEmail({
-        to: reservation.user.email,
-        ...buildExpiredMessage(reservation),
-      });
+      try {
+        const sent = await sendEmail({
+          to: reservation.user.email,
+          ...buildExpiredMessage(reservation),
+        });
 
-      if (sent) {
-        reservation.expiryEmailSentAt = new Date();
+        if (sent) {
+          reservation.expiryEmailSentAt = new Date();
+        }
+      } catch (error) {
+        console.error(
+          `Failed to send expiry notification for reservation ${reservation.permitCode}:`,
+          error.message
+        );
       }
     }
 
+    // Always expire the reservation and release the slot, regardless of email delivery outcome
     reservation.status = "expired";
     await reservation.save();
     await ParkingSlot.findByIdAndUpdate(reservation.slot?._id || reservation.slot, {
@@ -124,8 +142,17 @@ const expireReservationsAndNotify = async () => {
 };
 
 const processReservationAlerts = async () => {
-  await sendUpcomingExpiryReminders();
-  await expireReservationsAndNotify();
+  try {
+    await sendUpcomingExpiryReminders();
+  } catch (error) {
+    console.error("Error sending upcoming expiry reminders:", error.message);
+  }
+
+  try {
+    await expireReservationsAndNotify();
+  } catch (error) {
+    console.error("Error expiring reservations:", error.message);
+  }
 };
 
 module.exports = { processReservationAlerts };

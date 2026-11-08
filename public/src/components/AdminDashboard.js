@@ -1,10 +1,12 @@
 import { html } from "../lib.js";
 import { StatusChip } from "./common.js";
+import { AnalyticsDashboard } from "./AnalyticsDashboard.js";
 
 export const AdminDashboard = ({
   adminZones,
   zoneUsage,
   reports,
+  analyticsData,
   onCreateZone,
   onCreateSlot,
   onToggleZone,
@@ -24,6 +26,11 @@ export const AdminDashboard = ({
   };
 
   return html`
+    <${AnalyticsDashboard}
+      occupancy=${analyticsData?.occupancy}
+      predictions=${analyticsData?.predictions}
+      reputationStats=${analyticsData?.reputationStats}
+    />
     <section className="grid main-grid">
       <div className="panel">
         <div className="section-head">

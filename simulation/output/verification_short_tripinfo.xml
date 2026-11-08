@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-10-13T17:25:31.042981+05:30 by Eclipse SUMO sumo 1.28.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="campus.net.xml"/>
+        <route-files value="campus_demand.rou.xml"/>
+        <additional-files value="campus_parking.add.xml"/>
+    </input>
+
+    <output>
+        <summary-output value="output/verification_short_summary.xml"/>
+        <tripinfo-output value="output/verification_short_tripinfo.xml"/>
+        <statistic-output value="output/verification_short_stats.xml"/>
+    </output>
+
+    <time>
+        <begin value="27000"/>
+        <end value="28500"/>
+        <step-length value="1.0"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+        <collision.action value="none"/>
+        <time-to-teleport value="180"/>
+    </processing>
+
+    <report>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <gui_only>
+        <gui-settings-file value="gui-settings.cfg"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+</tripinfos>

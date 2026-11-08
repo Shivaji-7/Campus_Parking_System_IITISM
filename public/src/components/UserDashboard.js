@@ -1,6 +1,7 @@
 import { html } from "../lib.js";
 import { formatDate } from "../utils/format.js";
 import { StatusChip } from "./common.js";
+import { ReputationWidget } from "./ReputationWidget.js";
 
 export const UserDashboard = ({
   user,
@@ -8,8 +9,10 @@ export const UserDashboard = ({
   reservations,
   notifications,
   qrCodes,
+  reputation,
   onReserve,
   onLoadQr,
+  onCheckout,
 }) => {
   const reserveSlot = async (event, slotId) => {
     event.preventDefault();
@@ -25,6 +28,7 @@ export const UserDashboard = ({
   };
 
   return html`
+    <${ReputationWidget} reputation=${reputation} />
     <section className="grid main-grid">
       <div className="panel">
         <div className="section-head">
@@ -127,6 +131,16 @@ export const UserDashboard = ({
                 <button className="btn btn-ghost" onClick=${() => onLoadQr(reservation._id)}>
                   View QR Permit
                 </button>
+                ${reservation.status === "active"
+                  ? html`
+                      <button 
+                        className="btn btn-secondary checkout-btn" 
+                        onClick=${() => onCheckout(reservation._id)}
+                      >
+                        Check Out
+                      </button>
+                    `
+                  : null}
                 ${qrCodes[reservation._id]
                   ? html`
                       <img

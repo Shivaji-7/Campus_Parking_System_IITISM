@@ -1,17 +1,34 @@
-import { html } from "../lib.js";
+import { html, useEffect, useState } from "../lib.js";
 import { FeedbackBanner } from "./common.js";
 
 export const AuthPage = ({ feedback, onLogin, onRegister }) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  useEffect(() => {
+    window.fillDemoAccount = (demoEmail, demoPassword) => {
+      setEmail(demoEmail);
+      setPassword(demoPassword);
+    };
+    return () => {
+      delete window.fillDemoAccount;
+    };
+  }, []);
+
   const handleLogin = async (event) => {
     event.preventDefault();
-    const payload = Object.fromEntries(new FormData(event.currentTarget).entries());
-    await onLogin(payload);
+    await onLogin({ email: email.trim(), password });
   };
 
   const handleRegister = async (event) => {
     event.preventDefault();
     const payload = Object.fromEntries(new FormData(event.currentTarget).entries());
     await onRegister(payload);
+  };
+
+  const fillCredentials = (demoEmail, demoPassword) => {
+    setEmail(demoEmail);
+    setPassword(demoPassword);
   };
 
   return html`
@@ -24,14 +41,54 @@ export const AuthPage = ({ feedback, onLogin, onRegister }) => {
             <h2>Login</h2>
           </div>
         </div>
+
+        <div className="demo-fill-bar">
+          <span className="demo-fill-label">Fill Demo:</span>
+          <button
+            type="button"
+            className="btn-chip"
+            onClick=${() => fillCredentials("user@campus.com", "password123")}
+          >
+            User
+          </button>
+          <button
+            type="button"
+            className="btn-chip"
+            onClick=${() => fillCredentials("security@campus.com", "password123")}
+          >
+            Security
+          </button>
+          <button
+            type="button"
+            className="btn-chip"
+            onClick=${() => fillCredentials("admin@campus.com", "password123")}
+          >
+            Admin
+          </button>
+        </div>
+
         <form className="form-grid" onSubmit=${handleLogin}>
           <label>
             <span>Email</span>
-            <input type="email" name="email" placeholder="user@campus.com" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="user@campus.com"
+              value=${email}
+              onInput=${(e) => setEmail(e.target.value)}
+              required
+            />
           </label>
           <label>
             <span>Password</span>
-            <input type="password" name="password" placeholder="password123" required />
+            <input
+              type="password"
+              name="password"
+              placeholder="password123"
+              value=${password}
+              onInput=${(e) => setPassword(e.target.value)}
+              required
+            />
           </label>
           <button className="btn btn-primary" type="submit">Login</button>
         </form>

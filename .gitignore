@@ -1,13 +1,55 @@
-node_modules/
+# Environment and Secrets (CRITICAL)
 .env
-.env.local
-.DS_Store
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+package-lock.json.log
+
+# Python Environments and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+ENV/
+env/
+
+# Logs and Process Dumps
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-coverage/
+server-err.log
+server-out.log
+final_chrome_err.txt
+osm_de_err.txt
+
+# Backup and Temporary Files
+*.bak
+*.backup*
+*.audit_bak
+tmp/
+temp/
+.DS_Store
+Thumbs.db
+
+# Scraped raw map tile caches in root (processed GeoJSON and public maps are kept)
+esri_tile_*.jpg
+esri_satellite_*.jpg
+CyclOSM_*.png
+opentopomap_*.png
+osm_*.png
+osm_de_*.png
+osm_no_ref.png
+
+# Build artifacts
 dist/
 build/
-tmp/
+coverage/
 outputs/
 *.pptx

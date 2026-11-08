@@ -21,6 +21,10 @@ const parkingZoneSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
+    dynamicBufferSize: { type: Number, default: 0 },
+    baseBufferSize: { type: Number, default: 0 },
+    maxBufferSize: { type: Number, default: 3 },
+    lastBufferReset: { type: Date, default: Date.now },
   },
   { timestamps: true }
 );

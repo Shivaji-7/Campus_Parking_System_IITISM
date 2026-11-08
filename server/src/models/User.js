@@ -35,6 +35,13 @@ const userSchema = new mongoose.Schema(
       trim: true,
       default: "",
     },
+    reputation: {
+      stars: { type: Number, default: 3, min: 0, max: 5 },
+      benefits: { type: Number, default: 0 },
+      warnings: { type: Number, default: 0 },
+      totalOverstays: { type: Number, default: 0 },
+      feeMultiplier: { type: Number, default: 1.0 }
+    },
   },
   { timestamps: true }
 );

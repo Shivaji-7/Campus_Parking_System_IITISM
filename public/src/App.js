@@ -4,6 +4,7 @@ import { DashboardShell } from "./components/common.js";
 import { UserDashboard } from "./components/UserDashboard.js";
 import { SecurityDashboard } from "./components/SecurityDashboard.js";
 import { AdminDashboard } from "./components/AdminDashboard.js";
+import { TrafficPredictionDashboard } from "./components/TrafficPredictionDashboard.js";
 import { apiRequest } from "./services/api.js";
 import { getPermitCodeFromText } from "./utils/format.js";
 import { clearSession, loadSession, saveSession } from "./utils/session.js";
@@ -27,6 +28,7 @@ export const App = () => {
   const [dashboardData, setDashboardData] = useState(emptyData);
   const [qrCodes, setQrCodes] = useState({});
   const [verificationResult, setVerificationResult] = useState(null);
+  const [activeTab, setActiveTab] = useState("traffic-prediction");
 
   const resetForLogout = (message = null) => {
     clearSession();
@@ -57,9 +59,10 @@ export const App = () => {
       let nextData = { ...emptyData };
 
       if (currentRole === "user") {
-        const [slotsResponse, reservationsResponse] = await Promise.all([
+        const [slotsResponse, reservationsResponse, reputationResponse] = await Promise.all([
           apiRequest("/api/parking/slots", {}, session.token),
           apiRequest("/api/parking/my-reservations", {}, session.token),
+          apiRequest("/api/parking/reputation", {}, session.token).catch(() => ({})),
         ]);
 
         nextData = {
@@ -67,6 +70,7 @@ export const App = () => {
           slots: slotsResponse.slots,
           reservations: reservationsResponse.reservations,
           notifications: reservationsResponse.notifications,
+          reputation: reputationResponse.reputation,
         };
       }
 
@@ -86,11 +90,22 @@ export const App = () => {
       }
 
       if (currentRole === "admin") {
-        const [zonesResponse, slotsResponse, statsResponse, reportsResponse] = await Promise.all([
+        const [
+          zonesResponse,
+          slotsResponse,
+          statsResponse,
+          reportsResponse,
+          occupancyResponse,
+          predictionsResponse,
+          reputationStatsResponse
+        ] = await Promise.all([
           apiRequest("/api/admin/zones", {}, session.token),
           apiRequest("/api/parking/slots", {}, session.token),
           apiRequest("/api/admin/statistics", {}, session.token),
           apiRequest("/api/admin/reports", {}, session.token),
+          apiRequest("/api/analytics/occupancy", {}, session.token).catch(() => ({})),
+          apiRequest("/api/analytics/predictions", {}, session.token).catch(() => ({})),
+          apiRequest("/api/analytics/reputation-stats", {}, session.token).catch(() => ({})),
         ]);
 
         nextData = {
@@ -100,6 +115,11 @@ export const App = () => {
           stats: statsResponse.statistics,
           zoneUsage: statsResponse.zoneUsage,
           reports: reportsResponse.reportRows,
+          analyticsData: {
+            occupancy: occupancyResponse.occupancyData,
+            predictions: predictionsResponse.predictions,
+            reputationStats: reputationStatsResponse.reputationDistribution,
+          }
         };
       }
 
@@ -303,6 +323,20 @@ export const App = () => {
     }
   };
 
+  const handleCheckout = async (reservationId) => {
+    try {
+      await apiRequest(
+        `/api/parking/checkout/${reservationId}`,
+        { method: "POST" },
+        session.token
+      );
+      setFeedback({ type: "success", message: "Successfully checked out." });
+      await refreshDashboard("user");
+    } catch (error) {
+      handleApiError(error);
+    }
+  };
+
   const handleLogout = () => {
     resetForLogout(null);
   };
@@ -326,44 +360,53 @@ export const App = () => {
       user=${session.user}
       feedback=${feedback}
       metrics=${metrics}
+      activeTab=${activeTab}
+      onTabChange=${setActiveTab}
       onLogout=${handleLogout}
     >
-      ${session.user.role === "user"
-        ? html`
-            <${UserDashboard}
-              user=${session.user}
-              slots=${dashboardData.slots}
-              reservations=${dashboardData.reservations}
-              notifications=${dashboardData.notifications}
-              qrCodes=${qrCodes}
-              onReserve=${handleReserve}
-              onLoadQr=${handleLoadQr}
-            />
-          `
-        : null}
-      ${session.user.role === "security"
-        ? html`
-            <${SecurityDashboard}
-              slots=${dashboardData.slots}
-              activeReservations=${dashboardData.activeReservations}
-              verificationResult=${verificationResult}
-              onVerify=${handleVerifyPermit}
-              onToggleSlot=${handleToggleSlot}
-            />
-          `
-        : null}
-      ${session.user.role === "admin"
-        ? html`
-            <${AdminDashboard}
-              adminZones=${dashboardData.adminZones}
-              zoneUsage=${dashboardData.zoneUsage}
-              reports=${dashboardData.reports}
-              onCreateZone=${handleCreateZone}
-              onCreateSlot=${handleCreateSlot}
-              onToggleZone=${handleToggleZone}
-            />
-          `
-        : null}
+      ${activeTab === "traffic-prediction"
+        ? html`<${TrafficPredictionDashboard} token=${session.token} />`
+        : html`
+            ${session.user.role === "user"
+              ? html`
+                  <${UserDashboard}
+                    user=${session.user}
+                    slots=${dashboardData.slots}
+                    reservations=${dashboardData.reservations}
+                    notifications=${dashboardData.notifications}
+                    qrCodes=${qrCodes}
+                    reputation=${dashboardData.reputation}
+                    onReserve=${handleReserve}
+                    onLoadQr=${handleLoadQr}
+                    onCheckout=${handleCheckout}
+                  />
+                `
+              : null}
+            ${session.user.role === "security"
+              ? html`
+                  <${SecurityDashboard}
+                    slots=${dashboardData.slots}
+                    activeReservations=${dashboardData.activeReservations}
+                    verificationResult=${verificationResult}
+                    onVerify=${handleVerifyPermit}
+                    onToggleSlot=${handleToggleSlot}
+                  />
+                `
+              : null}
+            ${session.user.role === "admin"
+              ? html`
+                  <${AdminDashboard}
+                    adminZones=${dashboardData.adminZones}
+                    zoneUsage=${dashboardData.zoneUsage}
+                    reports=${dashboardData.reports}
+                    analyticsData=${dashboardData.analyticsData}
+                    onCreateZone=${handleCreateZone}
+                    onCreateSlot=${handleCreateSlot}
+                    onToggleZone=${handleToggleZone}
+                  />
+                `
+              : null}
+          `}
     </${DashboardShell}>
   `;
 };

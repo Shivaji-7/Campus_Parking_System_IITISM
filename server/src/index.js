@@ -10,6 +10,7 @@ const authRoutes = require("./routes/authRoutes");
 const parkingRoutes = require("./routes/parkingRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 const { processReservationAlerts } = require("./services/reservationAlertService");
+const { seedDatabase } = require("./seeds/seed");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -34,9 +35,23 @@ app.use(
         defaultSrc: ["'self'"],
         scriptSrc: ["'self'", "https://esm.sh", "https://cdn.jsdelivr.net"],
         scriptSrcElem: ["'self'", "https://esm.sh", "https://cdn.jsdelivr.net"],
-        styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+        styleSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          "https://fonts.googleapis.com",
+          "https://cdn.jsdelivr.net",
+        ],
         fontSrc: ["'self'", "https://fonts.gstatic.com", "data:"],
-        imgSrc: ["'self'", "data:", "blob:"],
+        imgSrc: [
+          "'self'",
+          "data:",
+          "blob:",
+          "https://*.tile.openstreetmap.org",
+          "https://*.tile.openstreetmap.de",
+          "https://*.tile.openstreetmap.fr",
+          "https://*.basemaps.cartocdn.com",
+          "https://server.arcgisonline.com",
+        ],
         connectSrc: ["'self'"],
       },
     },
@@ -60,6 +75,8 @@ app.get("/api/health", (req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/parking", parkingRoutes);
 app.use("/api/admin", adminRoutes);
+app.use("/api/analytics", require("./routes/analyticsRoutes"));
+app.use("/api/simulation", require("./routes/simulationRoutes"));
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../../public/index.html"));
@@ -102,6 +119,7 @@ const startServer = async () => {
     });
 
     await connectDb();
+    await seedDatabase();
 
     server = app.listen(PORT, HOST, () => {
       console.log(`Server running on http://${HOST}:${PORT}`);
